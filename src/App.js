@@ -1,45 +1,32 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./Components/Layout";
 import Home from "./Pages/Home";
 import Introduce from "./Pages/Introduce";
-import Studies from "./Pages/Studies";
 import Projects from "./Pages/Projects";
 import Medicine from "./Pages/Projects/Medicine";
-import Portfolio from "./Pages/Projects/Portfolio";
 import Quit from "./Pages/Projects/Quit";
 import Studyflex from "./Pages/Projects/Studyflex";
 import Kiwi from "./Pages/Projects/Kiwi";
-import Footer from "./Components/Footer";
+import Cloning from "./Pages/Projects/Clonings";
 
 function App() {
   const router = createBrowserRouter([
+    { path: "/", element: <Home /> },
+    { path: "/introduce", element: <Introduce /> },
     {
-      path: "",
-      element: <Layout />,
-      children: [
-        { path: "/", element: <Home /> },
-        { path: "/introduce", element: <Introduce /> },
-        {
-          path: "/projects",
-          element: <Projects />,
-          children: [
-            { path: "/projects/medicine", element: <Medicine /> },
-            { path: "/projects/portfolio", element: <Portfolio /> },
-            { path: "/projects/quit", element: <Quit /> },
-            { path: "/projects/studyflex", element: <Studyflex /> },
-            { path: "/projects/kiwi", element: <Kiwi /> },
-          ],
-        },
-        { path: "/studies", element: <Studies /> },
-      ],
+      path: "/projects",
+      element: <Projects />,
     },
+    { path: "/projects/medicine", element: <Medicine /> },
+    { path: "/projects/cloning", element: <Cloning /> },
+    { path: "/projects/quit", element: <Quit /> },
+    { path: "/projects/studyflex", element: <Studyflex /> },
+    { path: "/projects/kiwi", element: <Kiwi /> },
   ]);
   return (
     <div className="flex flex-col justify-between h-[100vh]">
-      <div className="px-10">
+      <div className=" h-[100vh]">
         <RouterProvider router={router} />
       </div>
-      <Footer />
     </div>
   );
 }

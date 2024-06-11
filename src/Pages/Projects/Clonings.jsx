@@ -1,60 +1,52 @@
 import { useState } from "react";
-import mediDetail1 from "../../assets/mediDetail1.png";
-import mediDetail2 from "../../assets/mediDetail2.png";
-import mediSearch from "../../assets/mediSearch.png";
-import mediHome from "../../assets/midiHome.png";
-import mediResult from "../../assets/mediResult.png";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import cloneHome from "../../assets/cloning.png";
+import cloneLogin from "../../assets/cloneLogin.png";
+import cloneSearch from "../../assets/cloneSearch.png";
+import cloneDetail from "../../assets/cloneDetail.png";
+import { FaGithub } from "react-icons/fa";
 
-export default function Medicine() {
+export default function Cloning() {
   const [photoInd, setPhotoInd] = useState(0);
   return (
     <div className="bg-black h-[100vh] flex flex-col justify-center items-center">
       <div className="relative z-50 gap-10 select-none bebas-neue-regular bg-emphaOrange w-[80vw] h-[60vh] text-center flex items-center justify-center font-bold">
         <div className="flex flex-col justify-center items-center">
           {photoInd === 0 ? (
-            <div className="flex gap-4 border-4 border-emphaOrange rounded-md">
-              <div
-                className="w-[220px] h-[400px] bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${mediHome})`,
-                }}
-              />
-              <div
-                className="w-[220px] h-[400px] bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${mediSearch})`,
-                }}
-              />
-            </div>
+            <div
+              className="w-[730px] h-[350px] bg-cover bg-center border-4 border-emphaOrange rounded-md"
+              style={{
+                backgroundImage: `url(${cloneLogin})`,
+              }}
+            />
           ) : photoInd === 1 ? (
             <div
-              className="w-[220px] h-[400px] bg-cover bg-center border-4 border-emphaOrange rounded-md"
+              className="w-[730px] h-[350px] bg-cover bg-center border-4 border-emphaOrange rounded-md"
               style={{
-                backgroundImage: `url(${mediResult})`,
+                backgroundImage: `url(${cloneHome})`,
+              }}
+            />
+          ) : photoInd === 2 ? (
+            <div
+              className="w-[730px] h-[350px] bg-cover bg-center border-4 border-emphaOrange rounded-md"
+              style={{
+                backgroundImage: `url(${cloneSearch})`,
               }}
             />
           ) : (
-            <div className="flex gap-4 border-4 border-emphaOrange rounded-md">
-              <div
-                className="w-[220px] h-[400px] bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${mediDetail1})`,
-                }}
-              />
-              <div
-                className="w-[220px] h-[400px] bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${mediDetail2})`,
-                }}
-              />
-            </div>
+            <div
+              className="w-[730px] h-[350px] bg-cover bg-center border-4 border-emphaOrange rounded-md"
+              style={{
+                backgroundImage: `url(${cloneDetail})`,
+              }}
+            />
           )}
           <div className="text-2xl">
             {photoInd === 0 ? (
-              <div>Home and Search Page</div>
+              <div>Login Page</div>
             ) : photoInd === 1 ? (
-              <div>Result Page</div>
+              <div>Home Page</div>
+            ) : photoInd === 2 ? (
+              <div>Search Page</div>
             ) : (
               <div>Detail Page</div>
             )}
@@ -93,32 +85,40 @@ export default function Medicine() {
                 className="dot cursor-pointer"
               />
             )}
+            {photoInd === 3 ? (
+              <div
+                onClick={() => setPhotoInd(3)}
+                className="dot cursor-pointer bg-emphaOrange border-2 border-black"
+              />
+            ) : (
+              <div
+                onClick={() => setPhotoInd(3)}
+                className="dot cursor-pointer"
+              />
+            )}
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <div className="font-bold text-[50px]">Nutrient</div>
+          <div className="font-bold text-[50px]">Netflix Clone</div>
           <div className="bg-black text-emphaOrange px-3 py-1 rounded-md">
-            사용자의 성별, 연령, 직업에 맞추어 영양제를 추천해주는 서비스
+            넷플릭스를 참고해서 만든 영화 검색 서비스
           </div>
           <div className="text-center mt-5">
-            사용자의 <span className="font-bold text-xl">성별, 연령, 직업</span>
-            에 따라서 영장제를 추천해주는 서비스입니다.
+            인기, 상영, 평점, 미개봉{" "}
+            <span className="font-bold text-xl">카테고리 별로</span> 영화들을
+            보여줍니다.
             <br />
-            사용자 정보에 따라 검색 결과 화면에 나오는{" "}
-            <span className="font-bold text-xl">추천 영양제 순서</span>가
-            달라집니다.
+            <span className="font-bold text-xl">디테일 페이지</span>로 영화의
+            추가 정보를 볼 수 있습니다.
             <br />
-            <span className="font-bold text-xl">차트</span>를 통해서 어떤 사람이
-            해당 영양제를 구매하는지를 보여줍니다.
+            <span className="font-bold text-xl">Debounce 검색</span> 기능을
+            구현했습니다.
           </div>
 
           <div className="mt-10 flex gap-12 text-[30px]">
-            <a href="https://github.com/yunchan312/Medicine.git">
+            <a href="https://github.com/yunchan312/UMC-6th/tree/master/week3/movie">
               <FaGithub className="cursor-pointer" />
-            </a>
-            <a href="https://vitaminsite-810a9.web.app/">
-              <FaExternalLinkAlt />
             </a>
           </div>
         </div>

@@ -1,9 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
 
 @layer base {
   body {
-    font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+  }
+}
+
+@layer utilities {
+  .stretch {
+    font-stretch: 50%;
+  }
+
+  .barcode {
+    font-family: "Libre Barcode 39", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+  }
+  .navigateBtn {
+    background-color: #393e46;
+    color: #f96d00;
+    font-size: 25px;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigateBtn:hover {
+    background-color: #222831;
   }
 }

@@ -3,10 +3,32 @@ import { useNavigate } from "react-router-dom";
 export default function Home() {
   const navigate = useNavigate();
   return (
-    <div>
-      <div onClick={() => navigate("/introduce")}>소개</div>
-      <div onClick={() => navigate("/studies")}>공부</div>
-      <div onClick={() => navigate("/projects")}>프로젝트</div>
+    <div className="bg-black h-[100vh] flex flex-col justify-center items-center">
+      <div className="relative z-50 select-none bebas-neue-regular bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold">
+        <div className="w-full text-3xl flex justify-between items-center px-10">
+          <span
+            onClick={() => navigate("/introduce")}
+            className="py-1 px-3 hover:bg-black hover:text-emphaOrange cursor-pointer"
+          >
+            INTRODUCE
+          </span>
+          <span className="text-5xl px-3">X</span>
+        </div>
+        <span className="text-[250px]">KOOYUNCHAN</span>
+        <div className="w-full text-3xl flex justify-between items-center px-10">
+          <span className="text-5xl px-3">X</span>
+          <span
+            onClick={() => navigate("/projects")}
+            className="py-1 px-3 hover:text-emphaOrange cursor-pointer hover:bg-black"
+          >
+            WORKS
+          </span>
+        </div>
+      </div>
+      <div className="select-none z-40 rotate-3 opacity-80 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
+      <div className="select-none z-40 rotate-6 opacity-40 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
+      <div className="select-none z-40 rotate-[9deg] opacity-20 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
+      <div className="select-none z-40 rotate-[12deg] opacity-10 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
     </div>
   );
 }
