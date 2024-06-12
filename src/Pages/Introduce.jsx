@@ -15,7 +15,7 @@ export default function Introduce() {
         <div className="flex justify-center items-start gap-15">
           <div className="w-[400px] flex flex-col gap-4">
             <div>
-              <div className="overflow-hidden text-3xl font-bold">
+              <div className="overflow-hidden text-2xl font-bold">
                 Education
               </div>
               <div className="text-lg">
@@ -52,7 +52,7 @@ export default function Introduce() {
               <div>More About Me</div>
               <div className="flex justify-start items-center gap-4 text-[35px]">
                 <Link to="https://github.com/yunchan312">
-                  <FaGithub className="cursor-pointer " />
+                  <FaGithub className="cursor-pointer" />
                 </Link>
                 <Link to="https://www.instagram.com/9uccichann/">
                   <FaInstagram className="cursor-pointer" />
