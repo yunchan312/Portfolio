@@ -61,10 +61,18 @@ export default function ProjectCard({ navi, type, title, isOrange }) {
       {type === 6 ? (
         <div className="py-2 group px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange">
           <div className="absolute w-full flex justify-center items-center group-hover:hidden">
-            <img src={football} className="w-[190px] opacity-40" />
+            <img
+              src={football}
+              className="w-[190px] opacity-40"
+              alt="football"
+            />
           </div>
           <div className="hidden w-full justify-center items-center group-hover:flex absolute">
-            <img src={orangeBall} className="w-[190px] opacity-40" />
+            <img
+              src={orangeBall}
+              className="w-[190px] opacity-40"
+              alt="orangeBall"
+            />
           </div>
 
           <span className="text-[80px]">{title}</span>
