@@ -1,4 +1,7 @@
 import Skills from "../Components/Skills";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 export default function Introduce() {
   return (
@@ -38,16 +41,31 @@ export default function Introduce() {
               <div className="text-lg">phenomenal312@naver.com</div>
             </div>
           </div>
-          <div className="w-[200px]">
-            <div className="font-bold text-2xl">Skills</div>
+          <div className="w-[200px] flex flex-col gap-4">
             <div>
-              <Skills />
+              <div className="font-bold text-2xl">Skills</div>
+              <div>
+                <Skills />
+              </div>
+            </div>
+            <div className="font-bold text-2xl">
+              <div>More About Me</div>
+              <div className="flex justify-start items-center gap-4 text-[35px]">
+                <Link to="https://github.com/yunchan312">
+                  <FaGithub className="cursor-pointer " />
+                </Link>
+                <Link to="https://www.instagram.com/9uccichann/">
+                  <FaInstagram className="cursor-pointer" />
+                </Link>
+                <Link to="https://flying-chokeberry-02e.notion.site/HOME-061d51c247f34f74b3b3d68aa270011f?pvs=4">
+                  <SiNotion className="cursor-pointer" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="select-none z-40 rotate-3 opacity-80 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
-
       <div className="select-none z-40 rotate-6 opacity-40 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
       <div className="select-none z-40 rotate-[9deg] opacity-20 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
       <div className="select-none z-40 rotate-[12deg] opacity-10 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />

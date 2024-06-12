@@ -62,7 +62,7 @@ export default function Studyflex() {
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="font-bold text-[35px]">Study-Flex</div>
-          <div className="bg-lightBlack text-emphaOrange px-3 py-1 rounded-md">
+          <div className="bg-black text-emphaOrange px-3 py-1 rounded-md">
             스터디에서 빌런을 피하고 싶을 때 최고의 선택
           </div>
           <div className="text-center mt-5">
