@@ -7,10 +7,13 @@ import Quit from "./Pages/Projects/Quit";
 import Studyflex from "./Pages/Projects/Studyflex";
 import Kiwi from "./Pages/Projects/Kiwi";
 import Cloning from "./Pages/Projects/Clonings";
+import Chepl from "./Pages/Projects/Chepl";
+import Test from "./Pages/Test";
 
 function App() {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
+    { path: "/test", element: <Test /> },
     { path: "/introduce", element: <Introduce /> },
     {
       path: "/projects",
@@ -21,6 +24,7 @@ function App() {
     { path: "/projects/quit", element: <Quit /> },
     { path: "/projects/studyflex", element: <Studyflex /> },
     { path: "/projects/kiwi", element: <Kiwi /> },
+    { path: "/projects/chepl", element: <Chepl /> },
   ]);
   return (
     <div className="flex flex-col justify-between h-[100vh]">

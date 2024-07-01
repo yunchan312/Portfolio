@@ -55,7 +55,12 @@ export default function Projects() {
           />
         </div>
         <div>
-          <ProjectCard type={5} navi={"quit"} title={"Quit"} photoURL={quit} />
+          <ProjectCard
+            type={5}
+            navi={"chepl"}
+            title={"ChePL"}
+            photoURL={quit}
+          />
         </div>
         <div>
           <ProjectCard title={"FCSAN"} type={6} />
