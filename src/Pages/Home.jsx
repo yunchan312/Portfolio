@@ -4,7 +4,7 @@ export default function Home() {
   const navigate = useNavigate();
   return (
     <div className="bg-black h-[100vh] flex flex-col justify-center items-center">
-      <div className="relative z-50 select-none bebas-neue-regular bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold">
+      <div className="relative py-5 z-50 select-none bebas-neue-regular bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold">
         <div className="w-full text-3xl flex justify-between items-center px-10">
           <span
             onClick={() => navigate("/introduce")}
@@ -14,7 +14,9 @@ export default function Home() {
           </span>
           <span className="text-5xl px-3">X</span>
         </div>
-        <span className="text-[250px]">KOOYUNCHAN</span>
+        <div className="text-[250px] h-[300px] relative bottom-6">
+          KOOYUNCHAN
+        </div>
         <div className="w-full text-3xl flex justify-between items-center px-10">
           <span className="text-5xl px-3">X</span>
           <span
