@@ -14,21 +14,21 @@ export default function ProjectCard({ navi, type, title, isOrange }) {
       } h-full cursor-pointer w-full`}
     >
       {type === 1 ? (
-        <div className="py-2 px-3 relative z-50 h-full flex justify-center items-center hover:bg-black hover:text-emphaOrange">
+        <div className="transition-colors py-2 px-3 relative z-50 h-full flex justify-center items-center hover:bg-black hover:text-emphaOrange border-4 border-emphaOrange">
           <div className="text-[45px]">🥝</div>
           <span className="text-[80px]">{title}</span>
           <div className="text-[45px]">🥝</div>
         </div>
       ) : null}
       {type === 2 ? (
-        <div className="group py-2 px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange">
-          <span className="text-[80px] border-x-4 group-hover:border-emphaOrange border-black px-5">
+        <div className="transition-colors group py-2 px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black border-4 border-emphaOrange hover:text-emphaOrange">
+          <span className="text-[50px] border-x-4 group-hover:border-emphaOrange border-black px-5">
             {title}
           </span>
         </div>
       ) : null}
       {type === 3 ? (
-        <div className="px-3 group relative z-50 h-full flex justify-center items-center hover:bg-black hover:text-emphaOrange">
+        <div className="transition-colors px-3 group relative z-50 h-full flex justify-center items-center hover:bg-black hover:text-emphaOrange border-4 border-emphaOrange">
           <div className="w-[20px] h-[10%] bg-black group-hover:bg-emphaOrange" />
           <div className="w-[5px] h-full" />
           <div className="w-[30px] h-[30%] bg-black group-hover:bg-emphaOrange" />
@@ -46,20 +46,20 @@ export default function ProjectCard({ navi, type, title, isOrange }) {
         </div>
       ) : null}
       {type === 4 ? (
-        <div className="py-2 px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange">
+        <div className="transition-colors py-2 px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange border-4 border-emphaOrange">
           <span className="text-[80px]">{title}</span>
           <div className="barcode text-center">asdfasfdsfadfadsasd</div>
         </div>
       ) : null}
       {type === 5 ? (
-        <div className="group py-2 px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange">
+        <div className="transition-colors group py-2 px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange border-4 border-emphaOrange">
           <span className="group-hover:bg-emphaOrange group-hover:text-black text-[80px] bg-black text-emphaOrange w-[70%] text-center">
             {title}
           </span>
         </div>
       ) : null}
       {type === 6 ? (
-        <div className="py-2 group px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange">
+        <div className="transition-colors py-2 group px-3 relative z-50 h-full flex flex-col justify-center items-center hover:bg-black hover:text-emphaOrange border-4 border-emphaOrange">
           <div className="absolute w-full flex justify-center items-center group-hover:hidden">
             <img
               src={football}

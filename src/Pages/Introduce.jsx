@@ -33,7 +33,8 @@ export default function Introduce() {
             <div className="text-lg">
               <div className="overflow-hidden text-2xl font-bold">Awards</div>
               <div>HUFS 창업아이디어경진대회 대상</div>
-              <div>NomadCoder Twitter Clone Contest 우수작</div>
+              <div>NomadCoder Twitter Clone Contest 최우수작 선정</div>
+              <div>HUFSummer Hackaton 우수상</div>
             </div>
 
             <div>
