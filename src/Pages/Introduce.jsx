@@ -26,8 +26,10 @@ export default function Introduce() {
             <div className="text-lg">
               <div className="overflow-hidden text-2xl font-bold">History</div>
               <div>UMC 5th WEB Challenger</div>
-              <div>UMC 6th WEB Part Leader</div>
-              <div>TAB WEB Study Leader</div>
+              <div>UMC 6th WEB Part Leader & vice president</div>
+              <div>2023 TAB WEB Study Leader</div>
+              <div>2024 TAB node Study Leader</div>
+              <div>UMC 7th President</div>
             </div>
 
             <div className="text-lg">
@@ -35,6 +37,7 @@ export default function Introduce() {
               <div>HUFS 창업아이디어경진대회 대상</div>
               <div>NomadCoder Twitter Clone Contest 최우수작 선정</div>
               <div>HUFSummer Hackaton 우수상</div>
+              <div>SPARCS AI Hackaton</div>
             </div>
 
             <div>

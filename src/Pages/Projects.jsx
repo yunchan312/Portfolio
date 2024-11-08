@@ -63,7 +63,7 @@ export default function Projects() {
           />
         </div>
         <div>
-          <ProjectCard title={"FCSAN"} type={6} />
+          <ProjectCard title={"WEKICK"} type={6} />
         </div>
       </div>
       <div className="select-none z-40 rotate-3 opacity-80 bebas-neue-regular absolute bg-emphaOrange w-[80vw] h-[60vh] text-center flex flex-col items-center justify-center font-bold" />
